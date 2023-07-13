@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup Form</title>
+</head>
+<body>
+   <h1>Create Admin</h1>
+    <form action="/admin/create" method="POST">
+        <div>
+            <label for="adName">Name:</label>
+            <input type="text" id="adName" name="adName" required>
+        </div>
+        <div>
+            <label for="adEmail">Email:</label>
+            <input type="email" id="adEmail" name="adEmail" required>
+        </div>
+        <div>
+            <label for="adPassword">Password:</label>
+            <input type="password" id="adPassword" name="adPassword" required>
+        </div>
+        <div>
+            <label for="role">Role:</label>
+            <select id="role" name="role">
+                <option value="2">Manager</option>
+                <option value="3">Exceutive</option>
+                <option value="4">Staff</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">Create</button>
+        </div>
+    </form>
+</body>
+</html>

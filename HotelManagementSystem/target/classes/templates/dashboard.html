@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hotel Management System Dashboard</title>
+  <style>
+    /* ...Existing CSS code... */
+
+    .auth-container {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 20px;
+    }
+
+    .auth-container .button {
+      margin-left: 10px;
+    }
+
+    .availability-section {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .availability-card {
+      flex-basis: 48%;
+      padding: 10px;
+      background-color: #f4f4f4;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .availability-card-header {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1> Welcome To Hotel Management System</h1>
+  </header>
+
+  <div class="container">
+    <div class="auth-container">
+      <a href="/login" class="button">Sign In</a>
+      <a href="/customer/create"  class="button">Sign Up</a>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Rooms</h2>
+      <div class="card">
+        <div class="card-header">Room 101</div>
+        <div class="card-content">
+          <p><span class="label">Type:</span> Single</p>
+          <p><span class="label">Status:</span> Occupied</p>
+          <p><span class="label">Occupant:</span> John Doe</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">Room 102</div>
+        <div class="card-content">
+          <p><span class="label">Type:</span> Double</p>
+          <p><span class="label">Status:</span> Available</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Bookings</h2>
+      <div class="card">
+        <div class="card-header">Booking 001</div>
+        <div class="card-content">
+          <p><span class="label">Room:</span> Room 101</p>
+          <p><span class="label">Guest:</span> John Doe</p>
+          <p><span class="label">Check-in:</span> 2023-06-25</p>
+          <p><span class="label">Check-out:</span> 2023-06-28</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">Booking 002</div>
+        <!-- ...More booking cards... -->
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Room Availability</h2>
+      <div class="availability-section">
+        <div class="availability-card">
+          <div class="availability-card-header">Single Rooms</div>
+          <div class="availability-card-content">
+            <p><span class="label">Available:</span> 5</p>
+            <p><span class="label">Occupied:</span>
+            </p></div></div></div></div></div></body></html> 
